@@ -1,0 +1,32 @@
+{
+  "name": "cicd-demo",
+  "version": "1.0.0",
+  "description": "A simple Node.js app with a full CI/CD pipeline using GitHub Actions and Render.com",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest --forceExit --detectOpenHandles",
+    "test:coverage": "jest --coverage --forceExit --detectOpenHandles"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/*.test.js"
+    ]
+  },
+  "keywords": ["cicd", "demo", "nodejs", "express"],
+  "author": "",
+  "license": "MIT"
+}
